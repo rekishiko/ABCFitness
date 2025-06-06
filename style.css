@@ -1,0 +1,70 @@
+:root {
+    --briskBlue: #17253f;
+    --intensityIndigo: #2343bd;
+    --aquaPulse: #91b9d2;
+    --limeLift: #def479;
+    --enduranceWhite: #fcfcfc;
+    --maxTitle: arial bold, sans-serif, 30px;
+    --title: arial bold, sans-serif, 25px;
+    --subtitle: comfortaa normal, sans-serif, 15px;
+    --bodyLarge: calibri normal, sans-serif, 20px;
+    --bodyStrong: calibri bold, sans-serif, 16px;
+    --body: calibri normal, sans-serif, 16px;
+    --captions: arial bold, sans-serif, 11px;
+}
+
+.topnav {
+    background-color: var(--aquaPulse);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    background-color: var(--briskBlue);
+}
+
+.logo{ 
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex-start;
+    flex-direction: row;
+
+}
+
+h1{ font-family: var(--maxTitle);
+    color: var(--enduranceWhite);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    color: var(--enduranceWhite);
+    font-family: var(--maxTitle);
+    background-color: var(--aquaPulse);
+}
+
+.joinButton{
+    background-color: var(--intensityIndigo);
+    color: var(--limeLift);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--bodyStrong);
+    display: flexbox;
+   align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.navbarText{
+    color: var(--enduranceWhite);
+    font-family: var(--subtitle);
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
