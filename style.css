@@ -40,6 +40,53 @@ h1{ font-family: var(--maxTitle);
     justify-content: center;
     text-align: center;
 }
+h2{
+    font-family: var(--title);
+    color: var(--limeLift);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3{
+    font-family: var(--subtitle);
+    color: var(--enduranceWhite);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-family: var(--bodyLarge);
+    color: var(--enduranceWhite);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--captions);
+    color: var(--aquaPulse);
+    padding: 20px;
+    margin: 40px;
+    width: 100%;
+}
+
+footer a {
+    color: var(--aquaPulse); /* This explicitly sets the color of links inside the footer */
+    text-decoration: none;        /* This explicitly removes the underline */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--limeLift); /* This sets the color when hovered */
+}
 
 .top{
     display: flex;
@@ -52,19 +99,131 @@ h1{ font-family: var(--maxTitle);
     background-color: var(--intensityIndigo);
     color: var(--limeLift);
     padding: 10px;
-    border-radius: 5px;
     font-family: var(--bodyStrong);
-    display: flexbox;
-   align-items: center;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
     text-decoration: none;
+    border: none;
 
 }
-.navbarText{
-    color: var(--enduranceWhite);
-    font-family: var(--subtitle);
-    padding: 10px;
-    text-decoration: none;
+.joinButton:hover {
+    background-color: var(--briskBlue);
+    color: var(--intensityIndigo);
+}
+
+.front1{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+.front1 img, .front2 img {
+   max-width: 80%;
+    height: auto;
+    border-radius: 40%;
+}
+
+.front2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.footerLinks{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    gap: 25px;
+}
+
+p{ font-family: var(--body);
+    color: var(--enduranceWhite);
+    text-align: center;
+    margin: 10px;
+
+}
+
+.hours{
+    font-family: var(--bodyStrong);
+    color: var(--enduranceWhite);
+    text-align: center;
+    margin: 10px;
+}
+.about1{
+    display: flex;
+
+}
+.about2{
+    display: flex;
+
+}
+
+.aboutText1{
+    display: flex;
+}
+.aboutText2{
+    display: flex;
+}
+
+.basic{
+    display: flex;
+}
+.platinum{
+    display: flex;
+}
+.images{
+    display: grid;
+}
+
+.event1{
+    display: flex;
+}
+
+.event2{
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .topnav {
+        flex-direction: row;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+    h1, h2, h3, h4, p, .hours {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    h1, h2, h3, h4, p, .hours {
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    h1, h2, h3, h4, p, .hours {
+        text-align: center;
+    }
 }
